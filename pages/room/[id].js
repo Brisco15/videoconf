@@ -23,8 +23,12 @@ export default function Room() {
 
             call.on('stream',(remoteStream)=> {
               document.querySelector('video#remote').srcObject = remoteStream
+
             })
+
           })
+
+          
         }}
         />
         <h1 className='mt-20 text-center text-3xl uppercase text-blue-500'>
@@ -42,6 +46,19 @@ export default function Room() {
         <div className="flex">
           <video id='local' autoPlay playsInline ></video>
           <video id='remote' autoplay playsInline></video>
+        </div>
+
+        <div>
+                <button 
+                    id="close-call"
+                    className="block mx-auto bg-red-500 text-white p-3 rounded-2xl mt-20 text-xl hover:bg-red-300"
+                    onClick={()=> {
+                      router.push(`/`)
+                    }
+                    }
+                >
+                    Disconnect
+                </button>
         </div>
       </>
       

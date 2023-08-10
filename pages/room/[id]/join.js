@@ -35,6 +35,20 @@ export default function Join(){
                 <video id="local" autoPlay playsInline ></video>
                 <video id="remote" autoPlay playsInline></video>
             </div>
+
+            <div>
+                <button 
+                    id="close-call"
+                    
+                    className="block mx-auto bg-red-500 text-white p-3 rounded-2xl mt-20 text-xl hover:bg-red-300"
+                    onClick={()=> {
+                        router.push(`/`)
+                      }
+                      }
+                >
+                    Disconnect
+                </button>
+            </div>
         </>
     )
 }
