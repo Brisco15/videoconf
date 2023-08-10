@@ -40,7 +40,7 @@ export default function Room() {
 
 
         <div className="flex">
-          <video id='local' autoPlay playsInline muted></video>
+          <video id='local' autoPlay playsInline ></video>
           <video id='remote' autoplay playsInline></video>
         </div>
       </>

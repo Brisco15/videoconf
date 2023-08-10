@@ -32,7 +32,7 @@ export default function Join(){
             </h1>
 
             <div className="flex">
-                <video id="local" autoPlay playsInline muted></video>
+                <video id="local" autoPlay playsInline ></video>
                 <video id="remote" autoPlay playsInline></video>
             </div>
         </>
